@@ -1,0 +1,47 @@
+$color-1: #9EF3FF;
+
+.feature-box{
+    display: flex;
+
+    gap: 16px;
+    &__text{
+
+    }
+    &__show{
+        
+    }
+}
+
+.appointment {
+    background-color: $color-1;
+    &__img{
+        background: url("../img/img/1.jpg") no-repeat;
+        background-size: cover;
+        min-height: 250px;
+        border: 1px solid black;
+    }
+    &__formBox{
+        padding: 88px 52px;
+        border: 1px solid black;
+    }
+    &__radio{
+
+    }
+}
+.achiev-con {
+    &__row{
+        gap:3rem 0;
+        border: 1px solid rgb(255, 9, 9);
+    }
+}
+.achiev-box {
+    
+    display: flex;
+    
+    gap: 16px;
+
+}
+
+.heading-text1{
+    margin: 0 auto;
+}

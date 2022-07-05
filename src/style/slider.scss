@@ -1,0 +1,27 @@
+
+
+.tns-nav{ 
+    text-align: center;
+    [aria-controls]{
+        border: none;
+        border-radius: 50%;
+        width: 8px;
+        height: 8px;
+        background: rgb(189, 189, 189);
+        margin-right: 8px;
+    }
+    &-active{
+        background:rgb(88, 88, 88) !important;
+    }
+
+}
+
+.my-slider{
+    &__box{
+        text-align: center;
+        // display: inline-block;
+    }
+    &__img{
+        width: 100%;
+    }
+}
