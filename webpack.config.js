@@ -4,10 +4,10 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 const devServer = (isDev) => !isDev ? {} : {
     devServer: {
-      watchFiles: ["./src/index.html"],
-        // open: true,
+      watchFiles: ["./src/*"],
+        open: true,
         hot: true,
-        port: 8090,
+        port: 8080,
     }
 };
 

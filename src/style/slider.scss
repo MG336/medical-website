@@ -7,11 +7,11 @@
         border-radius: 50%;
         width: 8px;
         height: 8px;
-        background: rgb(189, 189, 189);
+        background: color(p-700);
         margin-right: 8px;
     }
     &-active{
-        background:rgb(88, 88, 88) !important;
+        background:color(p-900) !important;
     }
 
 }

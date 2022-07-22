@@ -9,23 +9,12 @@
 </head>
 <body>
     <div id="wrapper">
-        <div class="container">
-            <!-- <div class="row">
-            <div class="col-12">
-                123
-                <div class="top-links">
-                    <li class="top-links-container">
-                       
-                    </li>
-                </div>
-            </div>
-            </div> -->
-        </div>
-        <header>
-            <div class="container">
-                <nav class="navbar navbar-light navbar-expand-md navbar-primary navbar-toggleable">
+        <header class="sticky-top navbar-light bg-light">
+                <nav class="navbar container top-8 navbar-light navbar-expand-md navbar-primary navbar-toggleable ">
                     <div class="container-fluid">
-                      <a class="navbar-brand" href="#">dentomax</a>
+                      <a class="navbar-brand " href="#">
+                        <img src="./img/icons/logo.svg" alt="logo" width="40" hidden="40" class="d-inline-block align-text-centr text-">
+                        <span class="text-uppercase fw-bold p-900--color">Dentomax</span></a>
                       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Переключатель навигации">
                         <span class="navbar-toggler-icon"></span>
                       </button>
@@ -41,65 +30,115 @@
                     </div>
                   </nav>
                   
-                </div>
         </header>
-        <section class="container">
-            <img src="./img/img1.png" class="img-fluid mx-auto"></img>
+     
+        <section class="carousel-con">
+            <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active" data-bs-interval="10000">
+                    <img src="./img/header/1.webp" class="d-block w-100" alt="...">
+                    <!-- <div class="carousel-caption d-none d-md-block rounded-2 bg-light bg-opacity-75">
+                      <h5 class="fs-2 text fw-bold text-uppercase">50% off</h5>
+                      <p class="fs-3">new patient visit</p>
+                    </div> -->
+                  </div>
+                  <div class="carousel-item" data-bs-interval="2000">
+                    <img src="./img/header/2.webp" class="d-block w-100" alt="...">
+                    <!-- <div class="carousel-caption d-none d-md-block bg-light bg-opacity-75">
+                        <h5 class="fs-2 text fw-bold text-uppercase">50% off</h5>
+                        <p class="fs-3">new patient visit</p>
+                    </div> -->
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./img/header/3.webp" class="d-block w-100" alt="...">
+                    <!-- <div class="carousel-caption d-none d-md-block carousel__text bg-light bg-opacity-75">
+                        <h5 class="fs-2 text fw-bold text-uppercase">50% off</h5>
+                        <p class="fs-3">new patient visit</p>
+                    </div> -->
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"  data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"  data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+                <div class="w-100 h-25 bg bg-opacity-75 position-absolute bottom-0 "></div>
+              </div>
         </section>
-        <section class="container">
+        <section class="services container bg-blue">
             <div class="row g-5 row-cols-1 row-cols-sm-2 row-cols-md-3">
                 <div class="feature-box col">
-                    <div class="feature-box__img">
-                        <img src="./img/icons/1.svg" alt="">
+                    <div class="feature-box__imgBox">
+                        <div class="feature-box__imgBg">
+                            <img class="feature-box__img" src="./img/icons/dental/1.svg"> 
+                        </div>
                     </div>
                     <div class="feature-box__text">
-                        <h3 class="feature-box__title">Intensive Care</h3>
-                        <p class="feature-box__p">Powerful Layout with Responsive functionality that can be adapted to any screen size. Resize browser to view.</p>
+                        <h3 class="feature-box__title">Dental Crown</h3>
+                        <p class="feature-box__p">A damaged tooth that cannot function safely without the risk of fracturing needs the stability and protection of a crown.</p>
                     </div>
                 </div>
                 <div class="feature-box col">
-                    <div class="feature-box__img">
-                        <img src="./img/icons/1.svg" alt="">
+                    <div class="feature-box__imgBox">
+                        <div class="feature-box__imgBg">
+                            <img class="feature-box__img" src="./img/icons/dental/3.svg"> 
+                        </div>
                     </div>
                     <div class="feature-box__text">
-                        <h3 class="feature-box__title">Intensive Care</h3>
-                        <p class="feature-box__p">Powerful Layout with Responsive functionality that can be adapted to any screen size. Resize browser to view.</p>
+                        <h3 class="feature-box__title">Dental Bridges</h3>
+                        <p class="feature-box__p">A bridge is a prosthetic tooth that fills any spaces where you might have missing teeth.</p>
                     </div>
                 </div>
                 <div class="feature-box col">
-                    <div class="feature-box__img">
-                        <img src="./img/icons/1.svg" alt="">
+                    <div class="feature-box__imgBox">
+                        <div class="feature-box__imgBg">
+                            <img class="feature-box__img" src="./img/icons/dental/5.svg"> 
+                        </div>
                     </div>
                     <div class="feature-box__text">
-                        <h3 class="feature-box__title">Intensive Care</h3>
-                        <p class="feature-box__p">Powerful Layout with Responsive functionality that can be adapted to any screen size. Resize browser to view.</p>
+                        <h3 class="feature-box__title">Inlays and Onlays</h3>
+                        <p class="feature-box__p">Dental Inlays and Onlays are restorations used to repair back teeth that have mild to moderate tooth decay.</p>
                     </div>
                 </div>
                 <div class="feature-box col">
-                    <div class="feature-box__img">
-                        <img src="./img/icons/1.svg" alt="">
+                    <div class="feature-box__imgBox">
+                        <div class="feature-box__imgBg">
+                            <img class="feature-box__img" src="./img/icons/dental/2.svg"> 
+                        </div>
                     </div>
                     <div class="feature-box__text">
-                        <h3 class="feature-box__title">Intensive Care</h3>
-                        <p class="feature-box__p">Powerful Layout with Responsive functionality that can be adapted to any screen size. Resize browser to view.</p>
+                        <h3 class="feature-box__title">Porcelain Veneers</h3>
+                        <p class="feature-box__p">Veneers are one of the most popular cosmetic treatments to instantly improve the look of your smile.</p>
                     </div>
                 </div>
                 <div class="feature-box col">
-                    <div class="feature-box__img">
-                        <img src="./img/icons/1.svg" alt="">
+                    <div class="feature-box__imgBox">
+                        <div class="feature-box__imgBg">
+                            <img class="feature-box__img" src="./img/icons/dental/4.svg"> 
+                        </div>
                     </div>
                     <div class="feature-box__text">
-                        <h3 class="feature-box__title">Intensive Care</h3>
-                        <p class="feature-box__p">Powerful Layout with Responsive functionality that can be adapted to any screen size. Resize browser to view.</p>
+                        <h3 class="feature-box__title">Root Canal</h3>
+                        <p class="feature-box__p">A root canal is one of the most common dental procedures performed, well over 14 million every year.</p>
                     </div>
                 </div>
                 <div class="feature-box col">
-                    <div class="feature-box__img">
-                        <img src="./img/icons/1.svg" alt="">
+                    <div class="feature-box__imgBox">
+                        <div class="feature-box__imgBg">
+                            <img class="feature-box__img" src="./img/icons/dental/6.svg"> 
+                        </div>
                     </div>
                     <div class="feature-box__text">
-                        <h3 class="feature-box__title">Intensive Care</h3>
-                        <p class="feature-box__p">Powerful Layout with Responsive functionality that can be adapted to any screen size. Resize browser to view.</p>
+                        <h3 class="feature-box__title">Invisalign</h3>
+                        <p class="feature-box__p">Imagine straightening your teeth without needing to use wires or brackets. With the Invisalign system, you can do just that.</p>
                     </div>
                 </div>
             </div>
@@ -165,24 +204,14 @@
                             <button class="accordion-button" type="button"
                                 data-bs-toggle="collapse" data-bs-target="#collapseOne"
                                 aria-expanded="true" aria-controls="collapseOne">
-                                Элемент аккордеона #1
+                                Medical Grade Sterilization
                             </button>
                         </h2>
                         <div id="collapseOne" class="accordion-collapse collapse show"
                             aria-labelledby="headingOne"
                             data-bs-parent="#accordionExample">
                             <div class="accordion-body">
-                                <strong>Это тело аккордеона первого элемента.</strong>
-                                Оно отображается по умолчанию, пока плагин свертывания
-                                не добавит соответствующие классы, которые мы используем
-                                для стилизации каждого элемента. Эти классы управляют
-                                общим внешним видом, а также отображением и скрытием с
-                                помощью переходов CSS. Вы можете изменить все это с
-                                помощью собственного CSS или переопределить наши
-                                переменные по умолчанию. Также стоит отметить, что
-                                практически любой HTML может быть помещен в
-                                <code>.accordion-body</code>, хотя переход ограничивает
-                                переполнение.
+                                We follow two step process to make our instruments sterile. First the instruments are thoroughly washed to remove any visible debris and air dried.
                             </div>
                         </div>
                     </div>
@@ -191,24 +220,14 @@
                             <button class="accordion-button collapsed" type="button"
                                 data-bs-toggle="collapse" data-bs-target="#collapseTwo"
                                 aria-expanded="false" aria-controls="collapseTwo">
-                                Элемент аккордеона #2
+                                CDC Recommended Disinfection
                             </button>
                         </h2>
                         <div id="collapseTwo" class="accordion-collapse collapse"
                             aria-labelledby="headingTwo"
                             data-bs-parent="#accordionExample">
                             <div class="accordion-body">
-                                <strong>Это тело аккордеона второго элемента.</strong>
-                                По умолчанию он скрыт, пока плагин свертывания не
-                                добавит соответствующие классы, которые мы используем
-                                для стилизации каждого элемента. Эти классы управляют
-                                общим внешним видом, а также отображением и скрытием с
-                                помощью переходов CSS. Вы можете изменить все это с
-                                помощью собственного CSS или переопределить наши
-                                переменные по умолчанию. Также стоит отметить, что
-                                практически любой HTML может быть помещен в
-                                <code>.accordion-body</code>, хотя переход ограничивает
-                                переполнение.
+                                We follow two step process to make our instruments sterile. First the instruments are thoroughly washed to remove any visible debris and air dried.
                             </div>
                         </div>
                     </div>
@@ -218,157 +237,220 @@
                                 data-bs-toggle="collapse"
                                 data-bs-target="#collapseThree" aria-expanded="false"
                                 aria-controls="collapseThree">
-                                Элемент аккордеона #3
+                                UV Disinfection of Non-Medical Equipment
                             </button>
                         </h2>
                         <div id="collapseThree" class="accordion-collapse collapse"
                             aria-labelledby="headingThree"
                             data-bs-parent="#accordionExample">
                             <div class="accordion-body">
-                                <strong>Это тело аккордеона третьего элемента.</strong>
-                                По умолчанию оно скрыто, пока плагин свертывания не
-                                добавит соответствующие классы, которые мы используем
-                                для стилизации каждого элемента. Эти классы управляют
-                                общим внешним видом, а также отображением и скрытием с
-                                помощью переходов CSS. Вы можете изменить все это с
-                                помощью собственного CSS или переопределить наши
-                                переменные по умолчанию. Также стоит отметить, что
-                                практически любой HTML может быть помещен в
-                                <code>.accordion-body</code>, хотя переход ограничивает
-                                переполнение.
+                                We follow two step process to make our instruments sterile. First the instruments are thoroughly washed to remove any visible debris and air dried.
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="testi col-lg-6">
                     
-                    <h4 class="mb-4">Patient Testimonials</h4>
+                    <h4 class="mb-4 text-uppercase fw-bold">Patient Testimonials</h4>
                     <div class="feature-box mb-5">
-                        <div class="feature-box__img">
+                        <div>
                             <img src="./img/ava/1.png" alt="">
                         </div>
                         <div class="feature-box__text">
         
-                            <p class="feature-box__p">“Lorem ipsum dolor sit amet,
+                            <p class="feature-box__p"><em>“Lorem ipsum dolor sit amet,
                                 consectetur
                                 adipiscing elit. Integer sit sed fermentum scelerisque
                                 vitae
-                                mattis interdum faucibus consectetur.”</p>
+                                mattis interdum faucibus consectetur.”</em></p>
                             <span class="feature-box__title">Eric Colwell</span>
         
                         </div>
                     </div>
                     <div class="feature-box mb-5">
-                        <div class="feature-box__img">
-                            <img src="./img/ava/1.png" alt="">
+                        <div>
+                            <img src="./img/ava/2.png" alt="">
                         </div>
                         <div class="feature-box__text">
         
-                            <p class="feature-box__p">“Lorem ipsum dolor sit amet,
+                            <p class="feature-box__p"><em>“Lorem ipsum dolor sit amet,
                                 consectetur adipiscing elit. Integer sit sed fermentum
                                 scelerisque vitae mattis interdum faucibus consectetur.”
-                            </p>
-                            <span class="feature-box__title">Eric Colwell</span>
+                            </em></p>
+                            <span class="feature-box__title">Polina Kranz</span>
                         </div>
         
                     </div>
         
-                    <div class="feature-box">
-                        <div class="feature-box__img">
-                            <img src="./img/ava/1.png" alt="">
+                    <div class="feature-box ">
+                        <div>
+                            <img src="./img/ava/3.png" alt="">
                         </div>
                         <div class="feature-box__text">
         
-                            <p class="feature-box__p">“Lorem ipsum dolor sit amet,
+                            <p class="feature-box__p"><em>“Lorem ipsum dolor sit amet,
                                 consectetur adipiscing elit. Integer sit sed fermentum
                                 scelerisque vitae mattis interdum faucibus consectetur.”
-                            </p>
-                            <span class="feature-box__title">Eric Colwell</span>
+                            </em></p>
+                            <span class="feature-box__title">Holly Maldano</span>
                         </div>
                     </div>
                
             </div>
             </div>
         </section>
-        <section class="achiev-con container">
-            <div class="row justify-content-center row-cols-auto achiev-con__row px-5">
+        <section class="achiev-con container py-5">
+            <div class="row justify-content-start row-cols-auto achiev-con__row px-5">
                 <div class="achiev-box col-lg-3">
-                    <div class="feature-box__img">
-                        <img src="./img/ava/1.png" alt="">
+                    <div class="feature-box__imgBox">
+                        <div class="feature-box__imgBg">
+                            <img class="feature-box__img" src="./img/icons/dental/9.svg"> 
+                        </div>
                     </div>
                     <div class="achiev-box__text">
-                        <span>100</span>
-                        <h5>Clients Served</h5>
+                        <h5 class="fw-bold fs-3">1561+</h5>
+                        <span class="text-uppercase">teeth cured</span>
+                        
                     </div>
                 </div>
                 <div class="achiev-box col-lg-3">
-                    <div class="feature-box__img">
-                        <img src="./img/ava/1.png" alt="">
+                    <div class="feature-box__imgBox">
+                        <div class="feature-box__imgBg">
+                            <img class="feature-box__img" src="./img/icons/dental/8.svg"> 
+                        </div>
                     </div>
                     <div class="achiev-box__text">
-                        <span>100</span>
-                        <h5>Clients Served</h5>
+                        <h5 class="fw-bold fs-3">257</h5>
+                        <span class="text-uppercase">dental fillings</span>
+                        
                     </div>
                 </div>
                 <div class="achiev-box col-lg-3">
-                    <div class="feature-box__img">
-                        <img src="./img/ava/1.png" alt="">
+                    <div class="feature-box__imgBox">
+                        <div class="feature-box__imgBg">
+                            <img class="feature-box__img" src="./img/icons/dental/3.svg"> 
+                        </div>
                     </div>
                     <div class="achiev-box__text">
-                        <span>100</span>
-                        <h5>Clients Served</h5>
+                        <h5 class="fw-bold fs-3">978+</h5>
+                        <span class="text-uppercase">dental implants</span>
+                        
                     </div>
                 </div>
                 <div class="achiev-box col-lg-3">
-                    <div class="feature-box__img">
-                        <img src="./img/ava/1.png" alt="">
+                    <div class="feature-box__imgBox">
+                        <div class="feature-box__imgBg">
+                            <img class="feature-box__img" src="./img/icons/dental/5.svg"> 
+                        </div>
                     </div>
                     <div class="achiev-box__text">
-                        <span>100</span>
-                        <h5>Clients Served</h5>
+                        <h5 class="fw-bold fs-3">1603+</h5>
+                        <span class="text-uppercase">Clients Served</span>
+                        
                     </div>
                 </div>
             </div>
         </section>
         <section class="specialist container">
-            <div class="text-center">
-                <h3 class="center">
+            <div class="text-center mb-5">
+                <h3 class="center text-uppercase fw-bold">
                     Meet our Team of Specialists
                 </h3>
                 <span>We make sure that your Life are in Good Hands.</span>
             </div>
             <div class="">
-            <div class="my-slider ">
+            <div class="my-slider">
                 <div class="my-slider__box">
-                    <img class="my-slider__img" src="./img/img/doctor-1.jpg" alt="">
-                    <h4>Dr. Erika Todd</h4>
-                    <span>Neurologist</span>
+                    <img class="my-slider__img" src="./img/doctors/1.webp" alt="">
+                    <h4>Dr. Jonah Levin</h4>
+                    <span>Dentist</span>
                 </div>
                 <div class="my-slider__box">
-                    <img class="my-slider__img" src="./img/img/doctor-1.jpg" alt="">
-                    <h4>Dr. Erika Todd</h4>
-                    <span>Neurologist</span>
+                    <img class="my-slider__img" src="./img/doctors/2.webp" alt="">
+                    <h4>Dr. Kevin Aldano</h4>
+                    <span>Dentist</span>
                 </div>
                 <div class="my-slider__box">
-                    <img class="my-slider__img" src="./img/img/doctor-1.jpg" alt="">
-                    <h4>Dr. Erika Todd</h4>
-                    <span>Neurologist</span>
+                    <img class="my-slider__img" src="./img/doctors/3.webp" alt="">
+                    <h4>Dr. Maddox Blake</h4>
+                    <span>Dentist</span>
                 </div>
                 <div class="my-slider__box">
-                    <img class="my-slider__img" src="./img/img/doctor-1.jpg" alt="">
-                    <h4>Dr. Erika Todd</h4>
-                    <span>Neurologist</span>
+                    <img class="my-slider__img" src="./img/doctors/4.webp" alt="">
+                    <h4>Dr. Melissa Ribero</h4>
+                    <span>Dentist</span>
                 </div>
                 <div class="my-slider__box">
-                    <img class="my-slider__img" src="./img/img/doctor-1.jpg" alt="">
-                    <h4>Dr. Erika Todd</h4>
-                    <span>Neurologist</span>
+                    <img class="my-slider__img" src="./img/doctors/5.webp" alt="">
+                    <h4>Dr. Stephanie Harris</h4>
+                    <span>Dentist</span>
                 </div>
 
             </div>
-        </div>
+            </div>
         </section>
-                  
+        <section class="contact container py-5 secondary bg-light d-flex align-items-center">
+            <div class="row row-cols-auto mx-auto gap-5">
+                <div class="col-12 col-md-8 d-md-flex gap-2  mx-auto justify-content-center">
+                    <input class="col-12 form-control-lg col-md-8 mb-3 mb-md-0" type="email"
+                        placeholder="Enter your Email to Subscribe to our Newsletter">
+        
+                    <button class="col-12 btn form-control-lg btn-primary col-md-3 " type="submit">Subscribe</button>
+                </div>
+
+                <div class="col-md-12 contact__con d-block d-md-flex justify-content-center gap-5 ">
+                    <div>
+                        <span>Call Us:</span>
+                        <p>(111) 222 333444</p>
+                    </div>
+                    <div>
+                        <span>Send an Email:</span>
+                        <p>123@gmail.com</p>
+                    </div>
+                    <div class="contact__icons d-lg-flex gap-2">
+                        <a class="contact__iconLink" href="#">
+                            <img src="./img/icons/social/1.svg" alt="">
+                        </a>
+                        <a class="contact__iconLink" href="#">
+                            <img src="./img/icons/social/2.svg" alt="">
+                        </a>
+                        <a class="contact__iconLink" href="#">
+                            <img src="./img/icons/social/3.svg" alt="">
+                        </a>
+                        <a class="contact__iconLink" href="#">
+                            <img src="./img/icons/social/4.svg" alt="">
+                        </a>
+                        <a class="contact__iconLink" href="#">
+                            <img src="./img/icons/social/5.svg" alt="">
+                        </a>
+        
+                    </div>
+                </div>
+            
+            </div>
+        </section>
+        <footer class="container footer py-4 d-flex flex-column gap-2">
+            <div class="mx-auto text-center text-decoration-none text-body">
+                <a class="text-decoration-none text-body" href="#">Home</a>
+                /
+                <a class="text-decoration-none text-body" href="#">Home</a>
+                /
+                <a class="text-decoration-none text-body" href="#">Home</a>
+                /
+                <a class="text-decoration-none text-body" href="#">Home</a>
+                /
+                <a class="text-decoration-none text-body" href="#">Home</a>
+            </div>
+            <div class="text-center ">
+                <span>© Designed & Built by
+                    <a href="https.mg1010.art">Mikhail Gorbunov</a>, 2022</span>
+            </div>
+        </footer>
+        
+        
+        <div>
+
+        </div>          
 
     </div>
 </body>

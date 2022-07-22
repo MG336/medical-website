@@ -1,4 +1,12 @@
 $color-1: #9EF3FF;
+$color-2: #545996;
+// body {
+//     color: $color-2;
+// }
+
+.navbar-nav {
+    color: $color-2;
+}
 
 .feature-box{
     display: flex;
@@ -7,9 +15,46 @@ $color-1: #9EF3FF;
     &__text{
 
     }
+    &__imgBox{
+        
+    }
+    &__imgBg{
+        width: 64px;
+        height: 64px;
+        background-color: color(p-900);
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+    &__img{
+        width: 60%;
+        height: auto;
+        fill: yellow;
+    }
     &__show{
         
     }
+}
+
+.services{
+    padding-top: 116px;
+    padding-bottom: 116px;
+
+}
+
+.accordion-section{
+    padding-top: 116px;
+    padding-bottom: 116px;
+}
+
+.carousel-inner {
+    
+}
+   
+
+.specialist {
+    padding: 140px 0; 
 }
 
 .appointment {
@@ -18,22 +63,23 @@ $color-1: #9EF3FF;
         background: url("../img/img/1.jpg") no-repeat;
         background-size: cover;
         min-height: 250px;
-        border: 1px solid black;
+
     }
     &__formBox{
         padding: 88px 52px;
-        border: 1px solid black;
     }
     &__radio{
 
     }
 }
+
 .achiev-con {
+    
     &__row{
         gap:3rem 0;
-        border: 1px solid rgb(255, 9, 9);
     }
 }
+
 .achiev-box {
     
     display: flex;
@@ -42,6 +88,31 @@ $color-1: #9EF3FF;
 
 }
 
-.heading-text1{
-    margin: 0 auto;
+.contact {
+    height: 384px;
+    &__icons{
+        display: flex;
+        flex-direction: row;
+    }
+    &__iconLink{
+        display: block;
+    }
 }
+
+.footer{
+    background: $gray-300;
+}
+
+.achiev-con {
+    background: $color-1;
+}
+
+
+@include media-breakpoint-up(md) { 
+    .carousel-item{
+        &__text{
+            
+        }
+    }
+
+ }
