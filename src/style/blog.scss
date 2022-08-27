@@ -1,0 +1,32 @@
+.contant {
+
+}
+.hero {
+    height: 400px;
+    background: url("../img/slider/3.webp") no-repeat center/200%;
+    background-position: 0% 20%;
+}
+
+
+@include media-breakpoint-up(md) {
+    .hero {
+        background-size: 100%;
+    }
+}
+    
+.card-post{
+    border: none;
+    padding-left: 32px;
+    &--first{
+        padding-left:0;
+    }
+    &__col{
+        background-color: rgb(237, 237, 237);
+        border-radius: 8px;
+    }
+}
+
+.leave-comment{
+    margin-bottom: 132px;
+}
+

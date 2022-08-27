@@ -1,0 +1,54 @@
+$colors: (
+    "p-900": #00E0FF,
+    "p-800": #6eeeff,
+    "p-700": #bef7ff,
+    "s-1": #545996,
+    "s-2": #549CD6,
+);
+  
+
+@each $status, $var in $colors {
+    .#{$status}--color {
+        color: $var;
+    }
+}
+
+   
+@function color($key){
+    @if map-has-key($colors, $key){
+        @return map-get($colors, $key);
+    }
+    @warn "Unknow '#{$key}' in $colors.";
+    @return null
+}
+
+$black:color(s-1);
+$gray-900:color(s-1);
+$primary: color(p-900);
+$info:color(s-2);
+
+$spacer:1rem;
+
+$spacers: (
+    0: 0,
+    1: $spacer * .25,
+    2: $spacer * .5,
+    3: $spacer,
+    4: $spacer * 1.5,
+    5: $spacer * 3,
+    6: $spacer * 6,
+    7: $spacer * 8,
+    8: $spacer * 10
+);
+
+
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+
+a {
+    color: color(s-2);
+}
+
+.btn {
+  text-transform: uppercase;
+}
